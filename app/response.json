@@ -1,0 +1,31 @@
+{
+                "Item" : [{
+                "name" : "Top News",
+                "defaultname" : "Top News",
+                "defaulturl" : "http://timesofindia.indiatimes.com/feeds/newsdefaultfeeds.cms?feedtype=sjson",
+                "sectionurl" : "http://timesofindia.indiatimes.com/feeds/feedurllist.cms?category=topnews",
+                "subsections" : "no",
+                "template" : "headlines",
+                "Icon" : "",
+                "ID" : "Top-01"
+                }, {
+                "name" : "City",
+                "defaultname" : "All Cities",
+                "defaulturl" : "http://timesofindia.indiatimes.com/feeds/newsfeeddf/-2128932452.cms?feedtype=sjson",
+                "sectionurl" : "http://timesofindia.indiatimes.com/feeds/feedurllist.cms?category=city",
+                "subsections" : "yes",
+                "template" : "news",
+                "Icon" : "",
+                "ID" : "City-01"
+                }, {
+                "name" : "India",
+                "defaultname" : "India",
+                "defaulturl" : "http://timesofindia.indiatimes.com/feeds/newsfeed/-2128936835.cms?feedtype=sjson",
+                "sectionurl" : "http://timesofindia.indiatimes.com/feeds/feedurllist.cms?category=india",
+                "subsections" : "no",
+                "template" : "news",
+                "Icon" : "",
+                "ID" : "India-01"
+                }
+                ]
+                }

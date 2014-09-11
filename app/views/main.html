@@ -1,0 +1,23 @@
+
+<div class="jumbotron">
+  <h1>Times Of India !</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+   </p>
+
+</div>
+
+<div class="row marketing">
+  <label class="col-sm-2 control-label">Category</label>
+  <select class="form-control" id="cat_val"ng-model="selectedItem" ng-options="operator.name for operator in category " ng-change="update()" ></select>  </div>
+
+  <h1>News</h1>
+  <hr/>
+  <div>
+    <div class="" ng-repeat="(key, value) in news">
+      <h2 ><i>{{value.title}}</i></h2>
+      <hr/>
+      <p ng-bind-html="value.description" class="lead" ></p>
+      <hr/>
+    </div>
+   </div>
