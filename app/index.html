@@ -30,19 +30,22 @@
         <h3 class="text-muted">TOI</h3>
       </div>
 
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+      <div ng-view="" ></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span>   <i> created by Rituraj Ratan</i></p>
+        <p><span class="glyphicon glyphicon-heart"></span><i> created by Rituraj Ratan</i></p>
       </div>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/news.js"></script>
         <script src="scripts/services/service.js"></script>
 
         <!-- endbuild -->

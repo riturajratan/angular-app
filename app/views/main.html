@@ -3,7 +3,7 @@
   <h1>Times Of India !</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-   </p>
+  </p>
 
 </div>
 
@@ -14,10 +14,19 @@
   <h1>News</h1>
   <hr/>
   <div>
-    <div class="" ng-repeat="(key, value) in news">
+    <div class="" ng-repeat="(key, value) in filterNews">
       <h2 ><i>{{value.title}}</i></h2>
       <hr/>
       <p ng-bind-html="value.description" class="lead" ></p>
       <hr/>
     </div>
-   </div>
+
+    <!-- regarding paging-->
+    <ul class="pagination" ng-show="newsStatus">
+      <li ng-class="{'disabled': start==current}"><a href="#" ng-click=" start==current || changePage(n-1)">&laquo;</a></li>
+      <li ng-repeat="n in  paging" ng-class="{'active':current==n}">
+        <a ng-click="changePage(n)" >{{n+1}} <span ng-if="current==n"class="sr-only">(current)</span> </a>
+      </li>
+      <li ng-class="{'disabled': last == current}"><a href="#" ng-click="last == current || changePage(n+1)" >&raquo;</a></li>
+    </ul>
+  </div>

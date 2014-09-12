@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name angularAppApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the angularAppApp
+ * @name angularAppApp.service:TOI
+ * @description make a service for local resonse of TImes OF India App
+ * # TOI
+ * service of the angularAppApp
  */
  angular.module('angularAppApp')
  .factory('TOI',function($http, $q){
@@ -23,23 +23,23 @@
 
  	};
 
- 	/** by this get all category comes**/
+ 	/** by this get all related News**/
+
  	var _getNews=function(url){
  		var deferred = $q.defer();
  		$http.get('news/'+url+'.json').then(function(modal){
- 			console.log(modal);
  			deferred.resolve(modal);
  		});
 
- return deferred.promise;
+ 		return deferred.promise;
 
-};
+ 	};
 
-return {
+ 	return {
 
-	_getCategoryDetails:_getCategoryDetails,
-	_getNews:_getNews
-};
+ 		_getCategoryDetails:_getCategoryDetails,
+ 		_getNews:_getNews
+ 	};
 
-});
+ });
 
